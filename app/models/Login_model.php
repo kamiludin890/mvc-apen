@@ -1,7 +1,7 @@
 <?php
 class Login_model
 {
-    public $sesi = "";
+    public $sesi = "", $userdata = "";
     public function SesiLogin($username, $password, $key = key)
     {
         $userpass = "$username,$password";
@@ -16,9 +16,6 @@ class Login_model
         $userdata = base64_decode(base64_decode($sesi));
         $userdata = str_replace("$key", "", $userdata);
         $userdata = explode(",", $userdata);
-        $user = $userdata[0];
-        $password = $userdata[1];
-        $data = "User = $user dan Password = $password";
-        return $data;
+        return $userdata;
     }
 }

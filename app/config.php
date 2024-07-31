@@ -11,4 +11,4 @@ define('key', '&nbspIamMoreStongerThanYou890123');
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', '');
-define('DB_NAME', 'dev-apen');
+define('DB_NAME', 'dev_apen');
