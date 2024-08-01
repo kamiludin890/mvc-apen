@@ -2,6 +2,7 @@
     <link href="<?= BASEURL ?>/css/style.css" rel="stylesheet" />
     <title>Dev APEN</title>
     <link href="<?= BASEURL ?>/img/favicon.ico" rel="icon">
+    <script src="<?= BASEURL ?>/js/jquery.js"></script>
 </head>
 
 <body>
