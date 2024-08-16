@@ -8,7 +8,7 @@ class User_model
     }
     public function getUserName($username)
     {
-        $this->db->query("SELECT user_name FROM " . DB_NAME . ".db_user WHERE user_name='$username'"); //WHERE 'user_name = :username'
+        $this->db->query("SELECT nama FROM " . DB_NAME . ".db_user WHERE user_name='$username'"); //WHERE 'user_name = :username'
         // $this->db->bind('username', $username);
         return $this->db->single();
     }

@@ -5,6 +5,7 @@ class Home extends Controllers
     {
         $data['profile'] = $this->model('Login_model')->UserLogin($_SESSION['sesi']);
         $data['usernameId'] = $this->model('User_model')->getUserName($data['profile'][0]);
+        $data['judul'] = 'Dashboard';
         if (empty($_SESSION['sesi'])) {
             echo "<script>window.location='" . BASEURL . "/Login';</script>";
         } else {
