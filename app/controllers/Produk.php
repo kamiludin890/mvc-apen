@@ -26,7 +26,7 @@ class Produk extends Controllers
             echo "<script>window.location='" . BASEURL . "/Login';</script>";
         } else {
             $this->view('Layout/header', $data);
-            $this->view('Produk/Index');
+            $this->view('Produk/Index', $data);
             $this->view('Layout/footer');
         }
     }
