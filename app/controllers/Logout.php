@@ -4,5 +4,5 @@ session_destroy();
 ?>
 
 <script>
-    location.href = "<?= BASEURL ?>";
+    location.href = "<?= PUBURL ?>";
 </script>

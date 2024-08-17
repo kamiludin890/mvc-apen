@@ -2,6 +2,7 @@
 //Nyalakan jika sistem sudah dijalankan
 //ini_set('display_errors', 0);
 //URL atau domain yang dipakai
+define('PUBURL', 'http://localhost/dev-apen/public');
 define('BASEURL', 'http://localhost/dev-apen/private');
 define('BASELINK', 'http://localhost/dev-apen/');
 //tittle nama perusahaan

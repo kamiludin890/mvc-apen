@@ -8,7 +8,7 @@ class Login extends Controllers
             $password = $_POST['password'];
             $sesi = $this->model('Login_model')->SesiLogin($username, $password);
             $_SESSION['sesi'] = $sesi;
-            echo "<script>window.location='" . BASEURL . "/Home';</script>";
+            echo "<script>window.location='" . BASEURL . "/Dashboard';</script>";
         }
         $this->view('Login/index');
     }

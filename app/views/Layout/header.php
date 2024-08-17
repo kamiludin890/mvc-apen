@@ -11,8 +11,8 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a><?= $data['usernameId']['nama']  ?></a>
         <a href="<?= BASEURL ?>/Logout">Log Out</a>
-        <a href="<?= BASEURL ?>/Home">Dasboard</a>
-        <a href="<?= BASEURL ?>/Produk">Produk</a>
+        <a href="<?= BASEURL ?>/Dashboard">Dasboard</a>
+        <a href="<?= BASEURL ?>/Produk_Control">Produk</a>
         <a href="<?= BASEURL ?>">COMINGSOON</a>
     </div>
     <div id="main">

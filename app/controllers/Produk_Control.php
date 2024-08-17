@@ -1,5 +1,5 @@
 <?php
-class Produk extends Controllers
+class Produk_Control extends Controllers
 {
     public function index()
     {
@@ -22,8 +22,12 @@ class Produk extends Controllers
         $data['usernameId'] = $this->model('User_model')->getUserName($data['profile'][0]);
         $data['judul'] = 'Produk';
         $data['produk'] = $this->model('Produk_model')->getAllProduk();
-        $this->view('Layout/header', $data);
-        $this->view('Produk/Index', $data);
-        $this->view('Layout/footer');
+        if (empty($_SESSION['sesi'])) {
+            echo "<script>window.location='" . BASEURL . "/Login';</script>";
+        } else {
+            $this->view('Layout/header', $data);
+            $this->view('Produk/Index', $data);
+            $this->view('Layout/footer');
+        }
     }
 }
